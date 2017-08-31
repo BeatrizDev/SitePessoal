@@ -1,0 +1,209 @@
+/* GERAL */
+
+body {
+	color: #4d4d4d;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+h1, h2 {
+	font-family: 'Baloo', Helvetica, Arial, sans-serif;
+	font-size: 2.5em;
+}
+h2 {
+	text-transform: uppercase;
+}
+.about-p {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/* NAVEGACAO */
+
+.cabecalhoPrincipal {
+	background-color: #CCC;
+	opacity: 0.9; 
+	filter: alpha(opacity=60);
+	margin-right: 5%;
+	width: 100%;
+}
+.cabecalhoPrincipal .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cabecalhoPrincipal ul {
+	padding: 3px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+.cabecalhoPrincipal-nav-link {
+	padding: 15px;
+	margin: 1px;
+	color: #FFFFFF;
+	transition: .5s;
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+
+	border: 1px solid #9799A6;
+}
+
+/* CABECALHO */
+
+header {
+	background-image: url(../img/code.jpg);
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 5em;
+	width: 100%;
+}
+.img-circle {
+	align-items: center;
+	border: 5px solid #4d4d4d;
+}
+
+/* SOBRE */
+
+.sobre {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px 0 35px;
+	line-height: 1.6;
+}
+.botao {
+	margin: 10px;
+}
+.botao a {
+	padding: 12px;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 0 35px 12px;
+}
+.habilidades li {
+	padding: 5px;
+	list-style-type: disc;
+}
+
+/* PERSONALIDADE */
+
+.personalidade {
+	background-color: #dfdfdf;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
+	padding: 30px;
+}
+.img-personalidade {
+	box-sizing: border-box;
+}
+.imagens {
+	background-color: #FFF;
+	border-radius: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.img-descricao {
+	padding: 10px;
+	font-size: 20px;
+}
+
+/* CONTATO */
+
+.contato {
+	align-items: center;
+	text-align: center;
+	padding: 5em 0 5em 0;
+}
+
+/* RODAPE */
+
+.rodape {
+	bdisplay: flex;
+	text-align: center;
+	justify-content: space-around;
+
+	background-color: #46b8da;
+	padding: 20px;
+	color: #FFF;
+	width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and ( min-width: 768px){
+	
+	/* NAVEGACAO */
+	.cabecalhoPrincipal {
+		position: fixed;
+	}
+	.cabecalhoPrincipal .container {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.cabecalhoPrincipal ul {
+		flex-direction: row;
+		width: 100%;
+	}
+	
+	/* CABECALHO */
+	header {
+		height: 97px;
+		height: 97vh;
+		justify-content: center;
+	}
+	.about-me {
+		height: 3vh;
+	}
+	
+	/* SOBRE */
+	
+	.sobre p {
+		text-align: center;
+		width: 60%;
+	}
+	
+	/* PERSONALIDADE */
+
+	.personalidade .container {
+		display: flex;
+		flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-around;
+
+    
+    
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
