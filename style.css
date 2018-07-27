@@ -4,17 +4,26 @@ body {
 	color: #4d4d4d;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	font-size: 18px;
+	
+	width: 100%;
 }
 .container {
 	width: 100%;
 	margin: 0 auto;
 }
-h1, h2 {
+h1, h2, h3{
 	font-family: 'Baloo', Helvetica, Arial, sans-serif;
-	font-size: 2.5em;
+	font-size: 2em;
 }
-h2 {
+h3 {
+	font-size: 15px;
+}
+h2, h3, .cabecalhoPrincipal-nav-link {
 	text-transform: uppercase;
+}
+h4 {
+	color: #898989;
+	font-weight: 700;
 }
 .about-p {
 	font-size: 20px;
@@ -24,10 +33,9 @@ h2 {
 /* NAVEGACAO */
 
 .cabecalhoPrincipal {
-	background-color: #CCC;
+	background-color: #eee;
 	opacity: 0.9; 
 	filter: alpha(opacity=60);
-	margin-right: 5%;
 	width: 100%;
 }
 .cabecalhoPrincipal .container {
@@ -36,28 +44,25 @@ h2 {
 	align-items: center;
 }
 .cabecalhoPrincipal ul {
-	padding: 3px;
+	padding: 5px;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	width: 100%;
 }
 .cabecalhoPrincipal-nav-link {
 	padding: 15px;
-	margin: 1px;
-	color: #FFFFFF;
+	margin: 5px;
+	color: #898989;
 	transition: .5s;
 	font-weight: bold;
 	font-size: 14px;
 	display: block;
-
-	border: 1px solid #9799A6;
 }
+
 
 /* CABECALHO */
 
 header {
-	background-image: url(../img/code.jpg);
+	background-image: url(../imagens/capa.jpg);
 	display: flex;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -65,45 +70,54 @@ header {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding: 5em;
+	padding: 10em;
 	width: 100%;
 }
 .img-circle {
 	align-items: center;
-	border: 5px solid #4d4d4d;
+	border: 5px solid #ccc;
+	width: 150px;
+	height: 150px;
 }
 
 /* SOBRE */
-
+#sobre {
+	width: 100%;
+}
 .sobre {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 10px 0 35px;
+	padding: 20px;
 	line-height: 1.6;
 }
 .botao {
 	margin: 10px;
 }
 .botao a {
-	padding: 12px;
+	padding: 15px;
 }
+
 
 /* HABILIDADES */
 
-.habilidades {
+#habilidades {
 	display: flex;
 	align-items: center;
-	flex-direction: column;
-	padding: 0 0 35px 12px;
+	text-align: center;
+	justify-content: center;
 }
-.habilidades li {
-	padding: 5px;
-	list-style-type: disc;
+
+.habilidades figure{ 
+	padding-bottom: 30px;
 }
 
 /* PERSONALIDADE */
+
+#personalidade {
+	padding-top: 50px;
+}
 
 .personalidade {
 	background-color: #dfdfdf;
@@ -111,7 +125,8 @@ header {
 	align-items: center;
 	text-align: center;
 	justify-content: space-around;
-	padding: 30px;
+	padding: 50px;
+	width: 100%;
 }
 .img-personalidade {
 	box-sizing: border-box;
@@ -132,13 +147,28 @@ header {
 .contato {
 	align-items: center;
 	text-align: center;
-	padding: 5em 0 5em 0;
+	padding: 50px 1px 50px 0 ;
+	width: 100%;
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+
+.botao-form {
+	display: flex;
+	align-items: center;
+	padding: 1em 2em;
+	margin-bottom: 5em;
 }
 
 /* RODAPE */
 
 .rodape {
-	bdisplay: flex;
+	display: flex;
 	text-align: center;
 	justify-content: space-around;
 
@@ -168,8 +198,7 @@ header {
 	
 	/* CABECALHO */
 	header {
-		height: 97px;
-		height: 97vh;
+		height: 50em;
 		justify-content: center;
 	}
 	.about-me {
@@ -178,9 +207,26 @@ header {
 	
 	/* SOBRE */
 	
+	#sobre {
+		display: block;
+		flex-direction: row;
+	}
 	.sobre p {
-		text-align: center;
-		width: 60%;
+		align-items: center;
+		width: 40%;
+	}
+	
+	/* HABILIDADES */
+	
+	#habilidades {
+		padding: 100px 0;
+	}
+	
+	.habilidades {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		flex-wrap: wrap;
 	}
 	
 	/* PERSONALIDADE */
@@ -197,13 +243,3 @@ header {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
